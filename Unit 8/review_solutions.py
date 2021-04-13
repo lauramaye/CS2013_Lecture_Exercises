@@ -1,6 +1,6 @@
 # import circuit playground express board
 from adafruit_circuitplayground import cp
-import time
+import time, random
 
 
 class NeoPixels: # organised all of our generic neopixel patterns
@@ -12,6 +12,7 @@ class NeoPixels: # organised all of our generic neopixel patterns
         self.pixel_amount = len(cp.pixels)
         cp.pixels.brightness = 0.1
         cp.pixels.auto_write = False
+        self.test = random.randint(0, 150)
 
 
 
